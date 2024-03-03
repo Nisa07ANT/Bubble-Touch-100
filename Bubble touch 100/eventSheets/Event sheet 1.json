@@ -1,0 +1,79 @@
+{
+	"name": "Event sheet 1",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 669086095076146,
+					"parameters": {
+						"object": "play1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 611001597052549,
+					"parameters": {
+						"which": "next"
+					}
+				},
+				{
+					"id": "play-by-name",
+					"objectClass": "Audio",
+					"sid": 853442300967796,
+					"parameters": {
+						"folder": "sounds",
+						"audio-file-name": "\"clickbutton\"",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 867602056700929
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 517542238221542,
+					"parameters": {
+						"object": "play1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 547784993801167,
+					"parameters": {
+						"seconds": "0.2"
+					}
+				}
+			],
+			"sid": 989150149689626
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 734255334411084
+				}
+			],
+			"actions": [],
+			"sid": 337781835112744
+		}
+	],
+	"sid": 920736270011653
+}
